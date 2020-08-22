@@ -9,17 +9,15 @@ type person struct {
 
 func main() {
 	p1 := person{"James", "Url"}
-	fmt.Println(p1)
+	fmt.Printf("%+v\n", p1)
 
 	p2 := person{firstName: "Henry", lastName: "Url"}
-	fmt.Println(p2)
+	fmt.Printf("%+v\n", p2)
 
 	var p3 person
-	fmt.Println(p3)
+	fmt.Printf("%+v\n", p3)
 
 	p3.firstName = "Daniel"
-	fmt.Println(p3)
-
-	p3.firstName = "Url"
-	fmt.Println(p3)
+	p3.lastName = "Url"
+	fmt.Printf("%+v\n", p3)
 }
